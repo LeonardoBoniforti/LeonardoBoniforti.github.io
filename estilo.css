@@ -1,0 +1,152 @@
+*{
+	margin: 0;
+	font-family: calibri;
+}
+
+body{
+	background: lightgray;
+}
+
+header{
+	padding-top: 50px;
+	text-align: center;
+	padding-bottom: 40px;
+}
+
+h1{
+	font-size: 35px;
+}
+
+nav ul li{
+	float: left;
+	list-style: none;
+	margin: 5px;
+	background: greenyellow;
+}
+
+#container{
+	float: left;
+	margin-left: 30%;
+	width: 600px;
+	text-align: center;
+	height: 2800px;
+	border: 1px solid black;
+
+}
+
+div{
+	width: 600px;
+	text-align: center;
+}
+
+h2{
+	
+	font-size: 30px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+h3{
+	color: green;
+	font-size: 25px;
+	float: left;
+
+}
+
+.texto{
+	
+	font-size: 18px;
+	margin-top: 10px;
+	margin-bottom: 25px;
+	width: 600px;
+	float: left;
+	text-align: justify;
+}
+
+img{
+	margin-bottom: 20px;
+	width: 600px;
+}
+
+aside{ 
+	margin-left: 30px;
+	width: 400px;
+	margin-top: 18%;
+	height: 2528px;
+	text-align: center;
+	float: left;
+}
+
+#h3aside{
+	margin-bottom: 40px;
+	color: black;
+	position: fixed;
+	width: 400px;
+}
+
+form{
+	margin-top: 80px;
+	margin-left: 100px;
+	position: fixed;
+}
+
+
+footer{
+	margin-left: 20px;
+	margin-top: 20px;
+	width: 100%;
+	float: left;
+}
+
+.nav{
+	background: greenyellow;
+	margin-left: 5px;
+}
+
+.arriba{
+	margin-left: 50%;
+	background: greenyellow;
+}
+
+/* Ahora trabajamos con contactos */
+
+#contactos{
+	margin-left: 30%;
+	margin-top: 80px;
+}
+
+button {
+	border-radius: 10px;
+	border: 2px solid darkred;
+}
+
+button img{
+	width: 80px;
+}
+
+#pie{
+	margin-top: 12.65%;
+}
+
+/* Ahora trabajamos con patrocinadores*/
+
+.divpa{
+	width: 100%;
+	height: 400px;
+}
+
+.divpa div{
+	float: left;
+	width: 300px;
+	margin-top: 60px;
+	margin-left: 155px;
+
+}
+
+.imgpatro{
+	float: left;
+	width: 300px;
+}
+
+
+
