@@ -1,0 +1,44 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	text-align: center;
+	font-family: Arial;
+	
+}
+
+body {
+	background: lightgoldenrodyellow;
+}
+
+div {
+	background: lightblue;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin: 25%;
+	margin-top: 80px;
+	margin-right: 420px;
+	margin-left: 420px;
+} 
+
+form {
+	padding: 10px;
+	margin: 10px;
+}
+
+h1 {
+	font-family: Helvetica;
+	color: lemonchiffon;
+	margin-bottom: 30px;
+}
+
+input {
+	padding: 10px;
+	margin: 5px;
+	width: 600px;
+
+}
+
+input[type='submit']{
+	background: lemonchiffon;
+	width: 400px;
+}
