@@ -1,152 +1,303 @@
 *{
 	margin: 0;
-	font-family: calibri;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 body{
-	background: lightgray;
+	background: #339999;
+	font-family: "oswald";
 }
 
-header{
-	padding-top: 50px;
-	text-align: center;
-	padding-bottom: 40px;
+ /*Estilo del Contenedor*/
+.container {
+	width: 100%;
+	max-width: 1500px;
+	/*height: 3500px;*/
+	margin: auto;
+	display: grid;
+	grid-template-columns: 10% 70% 20%;
+	grid-template-rows: 5% 91% 4%;
 }
 
-h1{
-	font-size: 35px;
-}
-
-nav ul li{
-	float: left;
-	list-style: none;
-	margin: 5px;
-	background: greenyellow;
-}
-
-#container{
-	float: left;
-	margin-left: 30%;
-	width: 600px;
-	text-align: center;
-	height: 2800px;
-	border: 1px solid black;
-
-}
-
-div{
-	width: 600px;
-	text-align: center;
-}
-
-h2{
-	
-	font-size: 30px;
+/*Estilo de la Cabecera*/
+.cabecera {
 	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+	grid-column: 1 / 4;
+	grid-row: 1 / 2;
+}
+
+/* Title principal H1*/
+.cabecera .title {
+	width: fit-content;
+	margin: auto;
+	text-align: center;
+	font-size: 3rem;	
+}
+
+/*Nav*/
+.nav-list {
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	gap: 5px;
+	
+}
+
+.nav-list .list a {
+	color: #000;
+	margin-right: 10px;
+}
+
+.nav-list .list a:hover {
+	color: #fff;
+	transition: 0.8s ease all;
+}
+
+/***Estilo del Main***/
+.content{
+	width: 100%;
+	max-width: 1000px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 30px;
+	grid-column: 2 / 3;
+	grid-row: 2 / 3;
+}
+
+/*Estilo del div principales*/
+.content .content-main {
+	width: 90%;
 	margin-bottom: 20px;
 }
 
-h3{
-	color: green;
-	font-size: 25px;
-	float: left;
-
+/*Estilos de los articulos*/
+.content .articulos {
 }
 
-.texto{
-	
-	font-size: 18px;
-	margin-top: 10px;
-	margin-bottom: 25px;
-	width: 600px;
-	float: left;
+/*Estilo a Subtitulo 2*/
+.content .articulos .title2 {
+	width: fit-content;
+	margin: auto;
+	margin-bottom: 30px;
+	text-align: center;
+	font-size: 2rem;
+}
+
+/*Estilo a Subtitulo 3*/
+.content .articulos .title3 {
+	width: fit-content;
+	/*width: 250px;*/
+	font-size: 1.5rem;
+	margin-bottom: 5px;
+}
+
+/*Estilos de los textos*/
+.content .articulos .texto {
+	font-size: 1.1rem;
+	margin-bottom: 10px;
 	text-align: justify;
 }
 
-img{
-	margin-bottom: 20px;
-	width: 600px;
+/*Estilo de las imagenes*/
+img {
+	width: 100%;
+	margin-bottom: 15PX;
 }
 
-aside{ 
-	margin-left: 30px;
-	width: 400px;
-	margin-top: 18%;
-	height: 2528px;
+/*Hover para todos los textos*/
+.title:hover {
+	color: #fff;
+	transition: 0.8s ease all;
+}
+
+.content .articulos .title2:hover {
+	color: #fff;
+	transition: 0.8s ease all;
+}
+
+.content .articulos .title3:hover {
+	color: #fff;
+	transition: 0.8s ease all;
+}
+
+.content .articulos .texto:hover {
+	color: #fff;
+	transition: 0.8s ease all;
+}
+
+
+/***Estilo del aside***/
+.aside {
+	/*width: fit-content;*/
+	max-width: 280px;
+	grid-column: 3 / 4;
+	grid-row: 2 / 3;
+	display: flex;
+	gap: 5px;
+}
+
+.aside .aside-div {
+	max-width: 230px;
+	position: fixed;
+	top: 450px;
+	text-align: justify;
+	margin-right: 20px;
+	border: 2px solid #000;
+	border-radius: 4px;
+	background: #338888;
+}
+
+.aside .aside-div .aside-title {
+	color: #000;
+	font-size: 1.1rem;
+	padding: 5px;
+}
+
+.aside .aside-div .formulario {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 5px;
+	margin-top: 10px;
+	padding: 5px;
+
+}
+
+.aside .aside-div .formulario .input-buscar {
+	width: 100%;
+	max-width: 230px;
+	min-height: 30px;
+	border: 2px solid #000;
+	border-radius: 4px;
+	background: #fff;
 	text-align: center;
-	float: left;
+	font-family: "oswald";
+	font-size: 1rem;
+	color: #000;
+}	
+	
+.aside .aside-div .formulario .input-submit {
+	min-width: 100px;
+	min-height: 30px;
+	border-radius: 4px;
+	background: #fff;
+	font-family: "oswald";
+	font-size: 1rem;
+	color: #000;
 }
 
-#h3aside{
-	margin-bottom: 40px;
+/*EL hover del Aside*/
+.aside .aside-div .aside-title:hover {
+	color: #fff;
+	transition: 0.8s ease all;
+}
+
+.aside .aside-div .formulario .input-buscar:hover {
+	background: #000;
+	color: #fff;
+	transition: 0.8s ease all;
+}
+
+.aside .aside-div .formulario .input-submit:hover {
+	background: #000;
+	color: #fff;
+	transition: 0.8s ease all;
+}
+
+/***Estilo del footer**/
+.footer {
+	width: 100%;
+	/*max-width: 1000px;*/
+	margin-top: 15px;
+	grid-column: 1 / 4;
+	grid-row: 3 / 4;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.footer .footer-div {
+	width: 90%;
+	font-size: 1.1rem;
+}
+
+.footer .footer-div .footer-texto {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	width: fit-content;
+}
+
+.footer .footer-div .footer-redes {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+.footer .footer-div .foo-redes {
+	text-decoration: none;
+	color: #000;
+	width: fit-content;
+}
+
+hr {
+	background: #000;
+	border-color: #000;
+	/*margin-left: 20%;*/
+}
+
+.footer .footer-div .foo-copyright {
+	text-decoration: none;
+	color: #000;
+	width: fit-content;
+}
+
+.arriba {
+	display: flex;
+	justify-content: center;
 	color: black;
-	position: fixed;
-	width: 400px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 20px;
+	width: fit-content;
 }
 
-form{
-	margin-top: 80px;
-	margin-left: 100px;
-	position: fixed;
+/*Haciendo el hover del footer*/
+.footer .footer-div .footer-texto:hover {
+	color: #fff;
+	transition: 0.8s ease all;
+}
+
+.footer .footer-div .foo-redes:hover {
+	color: #fff;
+	transition: 0.8s ease al;
+}
+
+.footer .footer-div .foo-copyright:hover {
+	color: #fff;
+	transition: 0.8s ease all;
+}
+
+.footer .footer-div .arriba:hover{
+	color: #fff;
+	transition: 0.8s ease all;
 }
 
 
-footer{
-	margin-left: 20px;
-	margin-top: 20px;
-	width: 100%;
-	float: left;
-}
 
-.nav{
-	background: greenyellow;
-	margin-left: 5px;
-}
 
-.arriba{
-	margin-left: 50%;
-	background: greenyellow;
-}
 
-/* Ahora trabajamos con contactos */
 
-#contactos{
-	margin-left: 30%;
-	margin-top: 80px;
-}
 
-button {
-	border-radius: 10px;
-	border: 2px solid darkred;
-}
 
-button img{
-	width: 80px;
-}
 
-#pie{
-	margin-top: 12.65%;
-}
 
-/* Ahora trabajamos con patrocinadores*/
 
-.divpa{
-	width: 100%;
-	height: 400px;
-}
 
-.divpa div{
-	float: left;
-	width: 300px;
-	margin-top: 60px;
-	margin-left: 155px;
-
-}
-
-.imgpatro{
-	float: left;
-	width: 300px;
-}
 
 
 
